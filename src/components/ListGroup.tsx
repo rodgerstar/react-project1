@@ -1,12 +1,17 @@
+ // {items :[], heading: string}
+interface props {
+    items: string[];
+    heading: string;
+}
+
 import { useState } from "react";
 
-function ListGroup() {
-    const items = ['Eshimuli', 'Elukongo', 'Emuhaya', 'Ebunangwe'];
+function ListGroup({items, heading}: props) {
     const [selectedItemIndex, setselectedItemIndex] = useState(-1);
 
     return (
         <>
-            <h1>List</h1>
+            <h1>{heading}</h1>
             {items.length === 0 && <p>No item found</p>}
             <ul className="list-group">
                 {items.map((item, index) => (
