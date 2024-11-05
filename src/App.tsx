@@ -1,13 +1,13 @@
-import Alert from "./components/alert.tsx";
+// App.tsx
+
+import Button from "./components/Button";
 
 function App() {
     return (
-    <div>
-        <Alert>
-            hello <span> world </span>
-        </Alert>
-    </div>
-);
+        <div>
+            <Button />
+        </div>
+    );
 }
 
 export default App;
