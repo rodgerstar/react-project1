@@ -1,15 +1,11 @@
-import ListGroup from "./components/ListGroup.tsx";
+import Alert from "./components/alert.tsx";
 
 function App() {
-    const items = ['Eshimuli', 'Elukongo', 'Emuhaya', 'Ebunangwe'];
-
-    const handleSelectItem = (item: string) => {
-        console.log(item);
-    }
-
     return (
     <div>
-        <ListGroup items={items} heading='cities' onSelectItem={handleSelectItem}/>
+        <Alert>
+            hello <span> world </span>
+        </Alert>
     </div>
 );
 }
